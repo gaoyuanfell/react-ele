@@ -1,0 +1,1077 @@
+[{
+  "act_tag": 0,
+  "activities": [{
+    "attribute": "{\"160\": {\"1\": 20.0, \"0\": 0}, \"50\": {\"1\": 10.0, \"0\": 0}, \"260\": {\"1\": 30.0, \"0\": 0}}",
+    "description": "满50减10，满160减20，满260减30",
+    "icon_color": "f07373",
+    "icon_name": "减",
+    "id": 22247141227,
+    "is_exclusive_with_food_activity": true,
+    "name": "自营销复杂满减活动",
+    "tips": "满50减10，满160减20，满260减30",
+    "type": 102
+  }, {
+    "description": "特价商品128元起",
+    "icon_color": "f1884f",
+    "icon_name": "特",
+    "id": 22235017298,
+    "name": "单品定价",
+    "tips": "单品定价"
+  }, {
+    "attribute": "1.0",
+    "description": "本店新用户立减1元",
+    "icon_color": "00b762",
+    "icon_name": "新",
+    "id": 1044614147,
+    "is_exclusive_with_food_activity": true,
+    "name": "门店新客立减",
+    "tips": "本店新用户立减1元",
+    "type": 108
+  }, {
+    "attribute": "17.0",
+    "description": "新用户下单立减17元",
+    "icon_color": "70bc46",
+    "icon_name": "首",
+    "id": 22254528378,
+    "is_exclusive_with_food_activity": true,
+    "name": "新用户立减(不与其他活动共享)",
+    "tips": "新用户下单立减17元",
+    "type": 103
+  }],
+  "authentic_id": 5395806843560134,
+  "average_cost": ">¥100/人",
+  "business_info": "{\"recent_order_num_display\": \"月售768\", \"lemon_support_tags\": [{\"color\": \"cce23028\", \"text\": \"50减10\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"160减20\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"260减30\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"a25c03\", \"text\": \"9元会员红包\", \"border\": \"4ca25c03\", \"background\": null, \"type\": 2, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"品质联盟\", \"border\": \"4ce23028\", \"background\": null, \"type\": 4, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"门店新客减1\", \"border\": \"4ce23028\", \"background\": null, \"type\": 6, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"128元特价\", \"border\": \"4ce23028\", \"background\": null, \"type\": 7, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"首单减17\", \"border\": \"4ce23028\", \"background\": null, \"type\": 5, \"icon\": null}], \"ad_info\": null}",
+  "delivery_fee_discount": 0,
+  "description": "Anthemy Cake致力于为每一位顾客送上新鲜、健康的西点。\n本店均使用进口原料新鲜现做。如：法国铁塔淡奶油、新西兰安佳黄油、澳洲MG芝士、日本日清面粉、韩国幼砂糖。",
+  "distance": 6019,
+  "favored": false,
+  "flavors": [{
+    "id": 249,
+    "name": "蛋糕"
+  }, {
+    "id": 241,
+    "name": "甜品"
+  }],
+  "float_delivery_fee": 10,
+  "float_minimum_order_amount": 100,
+  "has_story": false,
+  "id": "E15305727725956307473",
+  "image_path": "5076318cf58f9fbb3c83fceaf850fca8jpeg",
+  "is_new": false,
+  "is_premium": false,
+  "is_star": true,
+  "is_stock_empty": 0,
+  "is_valid": 1,
+  "latitude": 31.220313,
+  "longitude": 121.525129,
+  "max_applied_quantity_per_order": -1,
+  "name": "AnthemyCake冰激凌蛋糕",
+  "next_business_time": "明天 07:00",
+  "only_use_poi": false,
+  "opening_hours": ["07:00/23:00"],
+  "order_lead_time": 54,
+  "out_of_range": false,
+  "piecewise_agent_fee": {
+    "description": "配送费¥10",
+    "extra_fee": 0,
+    "is_extra": false,
+    "no_subsidy_fee": "",
+    "rules": [{
+      "fee": 10,
+      "price": 100
+    }],
+    "tips": "配送费¥10"
+  },
+  "platform": 0,
+  "posters": [],
+  "promotion_info": "各位小主，为了保证产品品质和口感，本店所有生日蛋糕接单后现做，我们奶油为天然动物奶油，收餐后一定要冷藏保存。蛋糕配送特殊，收餐时请确认好蛋糕完好再签收。\n如有售前售后问题或加急定单请致电18019761611（微同）我们将竭诚为您服务，请勿差评和催",
+  "rating": 4.8,
+  "rating_count": 189,
+  "recent_order_num": 768,
+  "recommend": {
+    "is_ad": false,
+    "reason": ""
+  },
+  "recommend_reasons": [{
+    "name": "回头客多"
+  }],
+  "regular_customer_count": 0,
+  "scheme": "https://h5.ele.me/shop/#id=E15305727725956307473",
+  "status": 1,
+  "support_tags": [{
+    "border": "dddddd",
+    "color": "666666",
+    "icon": "4e20966ca2a516de3f02fb9c7fd1bc6dpng",
+    "text": "蛋糕",
+    "type": 1
+  }, {
+    "border": "dddddd",
+    "color": "333333",
+    "text": "品质联盟"
+  }],
+  "supports": [{
+    "border": "90dddddd",
+    "description": "商家原因导致订单取消，赔付代金券",
+    "icon_color": "999999",
+    "icon_name": "赔",
+    "id": 10,
+    "name": "拒单赔",
+    "text_color": "666666",
+    "two_characters_icon_name": ""
+  }, {
+    "border": "90dddddd",
+    "description": "该商户食品安全已由国泰产险承担，食品安全有保障",
+    "icon_color": "999999",
+    "icon_name": "保",
+    "id": 7,
+    "name": "食安保",
+    "text_color": "666666",
+    "two_characters_icon_name": "保险"
+  }],
+  "tags": [],
+  "target_tag_path": "d6a7283753e66cad4c4dc9a459d96a7fpng",
+  "theme": {
+    "default_color": "2395ff",
+    "header_style": 0,
+    "hongbao_style": 0,
+    "price_color": "ff5339",
+    "third_tab_name": "商家",
+    "vanish_fields": []
+  },
+  "type": 0
+}, {
+  "act_tag": 0,
+  "activities": [{
+    "attribute": "{\"19\": {\"1\": 10.0, \"0\": 0}, \"268\": {\"1\": 28.0, \"0\": 0}, \"398\": {\"1\": 38.0, \"0\": 0}}",
+    "description": "满19减10，满268减28，满398减38",
+    "icon_color": "f07373",
+    "icon_name": "减",
+    "id": 21812361330,
+    "is_exclusive_with_food_activity": true,
+    "name": "自营销复杂满减活动",
+    "tips": "满19减10，满268减28，满398减38",
+    "type": 102
+  }, {
+    "attribute": "{\"89.0\": {\"quantity\": 1, \"must_pay_online\": 1, \"name\": \"\\u8721\\u70db\\uff0c\\u84dd\\u8272\\u5bff\\u661f\\u5e3d2\\u4efd\"}}",
+    "description": "满89元赠送蜡烛，蓝色寿星帽2份1份",
+    "icon_color": "3cc791",
+    "icon_name": "赠",
+    "id": 21812362002,
+    "is_exclusive_with_food_activity": true,
+    "name": "赠品活动",
+    "tips": "满89元赠送蜡烛，蓝色寿星帽2份1份",
+    "type": 106
+  }, {
+    "attribute": "17.0",
+    "description": "新用户下单立减17元",
+    "icon_color": "70bc46",
+    "icon_name": "首",
+    "id": 22254536834,
+    "is_exclusive_with_food_activity": true,
+    "name": "新用户立减(不与其他活动共享)",
+    "tips": "新用户下单立减17元",
+    "type": 103
+  }, {
+    "attribute": "10.0",
+    "description": "本店新用户立减10元",
+    "icon_color": "00b762",
+    "icon_name": "新",
+    "id": 1124735795,
+    "is_exclusive_with_food_activity": true,
+    "name": "门店新客立减",
+    "tips": "本店新用户立减10元",
+    "type": 108
+  }],
+  "authentic_id": 7345826853375845,
+  "average_cost": ">¥100/人",
+  "business_info": "{\"recent_order_num_display\": \"月售73\", \"lemon_support_tags\": [{\"color\": \"cce23028\", \"text\": \"19减10\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"268减28\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"398减38\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"a25c03\", \"text\": \"6元会员红包\", \"border\": \"4ca25c03\", \"background\": null, \"type\": 2, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"品质联盟\", \"border\": \"4ce23028\", \"background\": null, \"type\": 4, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"0元配送\", \"border\": \"4ce23028\", \"background\": null, \"type\": 12, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"门店新客减10\", \"border\": \"4ce23028\", \"background\": null, \"type\": 6, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"赠\", \"border\": \"4ce23028\", \"background\": null, \"type\": 10, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"首单减17\", \"border\": \"4ce23028\", \"background\": null, \"type\": 5, \"icon\": null}], \"ad_info\": null}",
+  "delivery_fee_discount": 0,
+  "description": "本店所有蛋糕都需要现制现售，所有原材料都是新鲜优质的原材料！收到蛋糕请放冰箱冷藏～",
+  "distance": 6677,
+  "favored": false,
+  "flavors": [{
+    "id": 249,
+    "name": "蛋糕"
+  }, {
+    "id": 250,
+    "name": "面包"
+  }],
+  "float_delivery_fee": 0,
+  "float_minimum_order_amount": 99,
+  "has_story": false,
+  "id": "E8275279879740073443",
+  "image_path": "6722fadb154ae51ab9d3dbb9b40000bfjpeg",
+  "is_new": false,
+  "is_premium": false,
+  "is_star": false,
+  "is_stock_empty": 0,
+  "is_valid": 1,
+  "latitude": 31.184117,
+  "longitude": 121.451355,
+  "max_applied_quantity_per_order": -1,
+  "name": "猫卡翻糖蛋糕定制MOCA",
+  "next_business_time": "明天 00:00",
+  "only_use_poi": false,
+  "opening_hours": ["00:00/24:00"],
+  "order_lead_time": 52,
+  "out_of_range": false,
+  "piecewise_agent_fee": {
+    "description": "免配送费",
+    "extra_fee": 0,
+    "is_extra": false,
+    "no_subsidy_fee": "",
+    "rules": [{
+      "fee": 0,
+      "price": 99
+    }],
+    "tips": "免配送费"
+  },
+  "platform": 0,
+  "posters": [],
+  "promotion_info": "本店所有蛋糕都是现制现售，21:00后预定的蛋糕第二天配送，具体送货时间会打电话与您沟通，请勿催单，有事电话联系：13705626658 或添加:18221972241",
+  "rating": 5,
+  "rating_count": 5,
+  "recent_order_num": 73,
+  "recommend": {
+    "is_ad": false,
+    "reason": ""
+  },
+  "recommend_reasons": [],
+  "regular_customer_count": 0,
+  "scheme": "https://h5.ele.me/shop/#id=E8275279879740073443",
+  "status": 1,
+  "support_tags": [{
+    "border": "dddddd",
+    "color": "666666",
+    "icon": "4e20966ca2a516de3f02fb9c7fd1bc6dpng",
+    "text": "蛋糕",
+    "type": 1
+  }, {
+    "border": "dddddd",
+    "color": "333333",
+    "text": "品质联盟"
+  }],
+  "supports": [{
+    "border": "90dddddd",
+    "description": "该商户食品安全已由国泰产险承担，食品安全有保障",
+    "icon_color": "999999",
+    "icon_name": "保",
+    "id": 7,
+    "name": "食安保",
+    "text_color": "666666",
+    "two_characters_icon_name": "保险"
+  }],
+  "theme": {
+    "default_color": "2395ff",
+    "header_style": 0,
+    "hongbao_style": 0,
+    "price_color": "ff5339",
+    "third_tab_name": "商家",
+    "vanish_fields": []
+  },
+  "type": 0
+}, {
+  "act_tag": 0,
+  "activities": [{
+    "attribute": "17.0",
+    "description": "新用户下单立减17元",
+    "icon_color": "70bc46",
+    "icon_name": "首",
+    "id": 22254654922,
+    "is_exclusive_with_food_activity": true,
+    "name": "新用户立减(不与其他活动共享)",
+    "tips": "新用户下单立减17元",
+    "type": 103
+  }],
+  "authentic_id": 5345816836112012,
+  "average_cost": ">¥100/人",
+  "business_info": "{\"recent_order_num_display\": \"月售1\", \"lemon_support_tags\": [{\"color\": \"a25c03\", \"text\": \"6元会员红包\", \"border\": \"4ca25c03\", \"background\": null, \"type\": 2, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"品质联盟\", \"border\": \"4ce23028\", \"background\": null, \"type\": 4, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"首单减17\", \"border\": \"4ce23028\", \"background\": null, \"type\": 5, \"icon\": null}], \"ad_info\": null}",
+  "delivery_fee_discount": 0,
+  "description": "注意⚠️当天无现货 需提早1-2天预定",
+  "distance": 5988,
+  "favored": false,
+  "flavors": [{
+    "id": 249,
+    "name": "蛋糕"
+  }],
+  "float_delivery_fee": 20,
+  "float_minimum_order_amount": 20,
+  "has_story": false,
+  "id": "E8073967673357333079",
+  "image_path": "22377ca9dd9bd4a2d4c8006e2523f7bbjpeg",
+  "is_new": false,
+  "is_premium": false,
+  "is_star": false,
+  "is_stock_empty": 0,
+  "is_valid": 1,
+  "latitude": 31.204527,
+  "longitude": 121.430793,
+  "max_applied_quantity_per_order": -1,
+  "name": "凡町",
+  "next_business_time": "明天 09:00",
+  "only_use_poi": false,
+  "opening_hours": ["09:00/22:00"],
+  "order_lead_time": 55,
+  "out_of_range": false,
+  "piecewise_agent_fee": {
+    "description": "配送费¥20",
+    "extra_fee": 0,
+    "is_extra": false,
+    "no_subsidy_fee": "",
+    "rules": [{
+      "fee": 20,
+      "price": 20
+    }],
+    "tips": "配送费¥20"
+  },
+  "platform": 0,
+  "posters": [],
+  "promotion_info": "注意⚠️当天无现货 需提早1-2天预定",
+  "rating": 0,
+  "rating_count": 0,
+  "recent_order_num": 1,
+  "recommend": {
+    "is_ad": false,
+    "reason": ""
+  },
+  "recommend_reasons": [],
+  "regular_customer_count": 0,
+  "scheme": "https://h5.ele.me/shop/#id=E8073967673357333079",
+  "status": 1,
+  "support_tags": [{
+    "border": "dddddd",
+    "color": "666666",
+    "icon": "4e20966ca2a516de3f02fb9c7fd1bc6dpng",
+    "text": "蛋糕",
+    "type": 1
+  }, {
+    "border": "dddddd",
+    "color": "333333",
+    "text": "品质联盟"
+  }],
+  "supports": [{
+    "border": "90dddddd",
+    "description": "该商户食品安全已由国泰产险承担，食品安全有保障",
+    "icon_color": "999999",
+    "icon_name": "保",
+    "id": 7,
+    "name": "食安保",
+    "text_color": "666666",
+    "two_characters_icon_name": "保险"
+  }],
+  "theme": {
+    "default_color": "2395ff",
+    "header_style": 0,
+    "hongbao_style": 0,
+    "price_color": "ff5339",
+    "third_tab_name": "商家",
+    "vanish_fields": []
+  },
+  "type": 0
+}, {
+  "act_tag": 0,
+  "activities": [{
+    "attribute": "{\"200\": {\"1\": 10.0, \"0\": 0}}",
+    "description": "满200减10",
+    "icon_color": "f07373",
+    "icon_name": "减",
+    "id": 22016517490,
+    "is_exclusive_with_food_activity": true,
+    "name": "自营销复杂满减活动",
+    "tips": "满200减10",
+    "type": 102
+  }, {
+    "description": "特价商品36元起",
+    "icon_color": "f1884f",
+    "icon_name": "特",
+    "id": 22291288490,
+    "name": "单品定价",
+    "tips": "单品定价"
+  }, {
+    "attribute": "5.0",
+    "description": "本店新用户立减5元",
+    "icon_color": "00b762",
+    "icon_name": "新",
+    "id": 1140096987,
+    "is_exclusive_with_food_activity": true,
+    "name": "门店新客立减",
+    "tips": "本店新用户立减5元",
+    "type": 108
+  }, {
+    "attribute": "17.0",
+    "description": "新用户下单立减17元",
+    "icon_color": "70bc46",
+    "icon_name": "首",
+    "id": 22254417098,
+    "is_exclusive_with_food_activity": true,
+    "name": "新用户立减(不与其他活动共享)",
+    "tips": "新用户下单立减17元",
+    "type": 103
+  }],
+  "authentic_id": 5375886854036101,
+  "average_cost": ">¥100/人",
+  "business_info": "{\"recent_order_num_display\": \"月售59\", \"lemon_support_tags\": [{\"color\": \"cce23028\", \"text\": \"200减10\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"a25c03\", \"text\": \"8元会员红包\", \"border\": \"4ca25c03\", \"background\": null, \"type\": 2, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"品质联盟\", \"border\": \"4ce23028\", \"background\": null, \"type\": 4, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"0元配送\", \"border\": \"4ce23028\", \"background\": null, \"type\": 12, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"门店新客减5\", \"border\": \"4ce23028\", \"background\": null, \"type\": 6, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"36元特价\", \"border\": \"4ce23028\", \"background\": null, \"type\": 7, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"领10元红包\", \"border\": \"4ce23028\", \"background\": null, \"type\": 8, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"首单减17\", \"border\": \"4ce23028\", \"background\": null, \"type\": 5, \"icon\": null}], \"ad_info\": null}",
+  "delivery_fee_discount": 0,
+  "description": "",
+  "distance": 7219,
+  "favored": false,
+  "flavors": [{
+    "id": 249,
+    "name": "蛋糕"
+  }, {
+    "id": 714,
+    "name": "冰淇淋"
+  }],
+  "float_delivery_fee": 0,
+  "float_minimum_order_amount": 50,
+  "has_story": false,
+  "id": "E4761134969914750724",
+  "image_path": "7ed250e7197577b9acabfc1716d96bb4png",
+  "is_new": false,
+  "is_premium": false,
+  "is_star": false,
+  "is_stock_empty": 0,
+  "is_valid": 1,
+  "latitude": 31.270297,
+  "longitude": 121.43099,
+  "max_applied_quantity_per_order": -1,
+  "name": "Yeetame鲜奶蛋糕订制",
+  "next_business_time": "明天 05:00",
+  "only_use_poi": false,
+  "opening_hours": ["05:00/23:55"],
+  "order_lead_time": 51,
+  "out_of_range": false,
+  "piecewise_agent_fee": {
+    "description": "免配送费",
+    "extra_fee": 0,
+    "is_extra": false,
+    "no_subsidy_fee": "",
+    "rules": [{
+      "fee": 0,
+      "price": 50
+    }],
+    "tips": "免配送费"
+  },
+  "platform": 0,
+  "posters": [],
+  "promotion_info": "",
+  "rating": 4.6,
+  "rating_count": 12,
+  "recent_order_num": 59,
+  "recommend": {
+    "is_ad": false,
+    "reason": ""
+  },
+  "recommend_reasons": [],
+  "regular_customer_count": 0,
+  "scheme": "https://h5.ele.me/shop/#id=E4761134969914750724",
+  "status": 1,
+  "support_tags": [{
+    "border": "dddddd",
+    "color": "666666",
+    "icon": "4e20966ca2a516de3f02fb9c7fd1bc6dpng",
+    "text": "蛋糕",
+    "type": 1
+  }, {
+    "border": "4c000000",
+    "color": "99000000",
+    "text": "支持自取",
+    "type": 20
+  }, {
+    "border": "dddddd",
+    "color": "333333",
+    "text": "品质联盟"
+  }],
+  "supports": [{
+    "border": "90dddddd",
+    "description": "商家原因导致订单取消，赔付代金券",
+    "icon_color": "999999",
+    "icon_name": "赔",
+    "id": 10,
+    "name": "拒单赔",
+    "text_color": "666666",
+    "two_characters_icon_name": ""
+  }, {
+    "border": "90dddddd",
+    "description": "该商户食品安全已由国泰产险承担，食品安全有保障",
+    "icon_color": "999999",
+    "icon_name": "保",
+    "id": 7,
+    "name": "食安保",
+    "text_color": "666666",
+    "two_characters_icon_name": "保险"
+  }, {
+    "border": "90dddddd",
+    "description": "该商家支持开发票，请在下单时填写好发票抬头",
+    "icon_color": "999999",
+    "icon_name": "票",
+    "id": 4,
+    "name": "开发票",
+    "text_color": "666666",
+    "two_characters_icon_name": "发票"
+  }],
+  "theme": {
+    "default_color": "2395ff",
+    "header_style": 0,
+    "hongbao_style": 0,
+    "price_color": "ff5339",
+    "third_tab_name": "商家",
+    "vanish_fields": []
+  },
+  "type": 0
+}, {
+  "act_tag": 0,
+  "activities": [{
+    "attribute": "{\"98\": {\"1\": 10.0, \"0\": 0}, \"188\": {\"1\": 30.0, \"0\": 0}, \"258\": {\"1\": 50.0, \"0\": 0}}",
+    "description": "满98减10，满188减30，满258减50",
+    "icon_color": "f07373",
+    "icon_name": "减",
+    "id": 22159905650,
+    "is_exclusive_with_food_activity": true,
+    "name": "自营销复杂满减活动",
+    "tips": "满98减10，满188减30，满258减50",
+    "type": 102
+  }, {
+    "attribute": "{\"100.0\": {\"quantity\": 1, \"must_pay_online\": 1, \"name\": \"\\u6cd5\\u5f0f\\u5c0f\\u8721\\u70db+\\u751f\\u65e5\\u7687\\u51a0\\u5e3d\"}}",
+    "description": "满100元赠送法式小蜡烛+生日皇冠帽1份",
+    "icon_color": "3cc791",
+    "icon_name": "赠",
+    "id": 22277294410,
+    "is_exclusive_with_food_activity": true,
+    "name": "赠品活动",
+    "tips": "满100元赠送法式小蜡烛+生日皇冠帽1份",
+    "type": 106
+  }, {
+    "attribute": "2.0",
+    "description": "本店新用户立减2元",
+    "icon_color": "00b762",
+    "icon_name": "新",
+    "id": 1138271683,
+    "is_exclusive_with_food_activity": true,
+    "name": "门店新客立减",
+    "tips": "本店新用户立减2元",
+    "type": 108
+  }, {
+    "attribute": "20.0",
+    "description": "新用户下单立减20元",
+    "icon_color": "70bc46",
+    "icon_name": "首",
+    "id": 22255236602,
+    "is_exclusive_with_food_activity": true,
+    "name": "新用户立减(不与其他活动共享)",
+    "tips": "新用户下单立减20元",
+    "type": 103
+  }, {
+    "description": "特价商品5元起",
+    "icon_color": "f1884f",
+    "icon_name": "换",
+    "id": 21795620458,
+    "name": "超值换购",
+    "tips": "超值换购"
+  }],
+  "authentic_id": 4345816859868413,
+  "average_cost": ">¥100/人",
+  "business_info": "{\"recent_order_num_display\": \"月售110\", \"lemon_support_tags\": [{\"color\": \"cce23028\", \"text\": \"98减10\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"188减30\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"258减50\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"品质联盟\", \"border\": \"4ce23028\", \"background\": null, \"type\": 4, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"0元配送\", \"border\": \"4ce23028\", \"background\": null, \"type\": 12, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"门店新客减2\", \"border\": \"4ce23028\", \"background\": null, \"type\": 6, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"5元特价\", \"border\": \"4ce23028\", \"background\": null, \"type\": 7, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"赠\", \"border\": \"4ce23028\", \"background\": null, \"type\": 10, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"首单减20\", \"border\": \"4ce23028\", \"background\": null, \"type\": 5, \"icon\": null}], \"ad_info\": null}",
+  "delivery_fee_discount": 0,
+  "description": "",
+  "distance": 1022,
+  "favored": false,
+  "flavors": [{
+    "id": 249,
+    "name": "蛋糕"
+  }, {
+    "id": 241,
+    "name": "甜品"
+  }],
+  "float_delivery_fee": 0,
+  "float_minimum_order_amount": 0,
+  "folding_restaurant_brand": "花神蛋糕",
+  "folding_restaurants": [{
+    "distance": 1247,
+    "id": "E2402496850446145457",
+    "name": "花神蛋糕(淮海东路店)",
+    "order_lead_time": 52,
+    "scheme": "https://h5.ele.me/shop/#id=E2402496850446145457",
+    "type": 0
+  }],
+  "has_story": false,
+  "id": "E8282364537137650775",
+  "image_path": "f54b8ebaa150de3efcbfa6b520324878png",
+  "is_new": false,
+  "is_premium": false,
+  "is_star": false,
+  "is_stock_empty": 0,
+  "is_valid": 1,
+  "latitude": 31.226884,
+  "longitude": 121.480208,
+  "max_applied_quantity_per_order": -1,
+  "name": "花神蛋糕(黄浦店)",
+  "next_business_time": "明天 07:00",
+  "only_use_poi": false,
+  "opening_hours": ["07:00/23:00"],
+  "order_lead_time": 33,
+  "out_of_range": false,
+  "piecewise_agent_fee": {
+    "description": "免配送费",
+    "extra_fee": 0,
+    "is_extra": false,
+    "no_subsidy_fee": "",
+    "rules": [{
+      "fee": 0,
+      "price": 0
+    }],
+    "tips": "免配送费"
+  },
+  "platform": 0,
+  "posters": [],
+  "promotion_info": "客服电话132-6392-6064，接单现做，1-3小时送到。紧急订单请先电话沟通。",
+  "rating": 4.9,
+  "rating_count": 24,
+  "recent_order_num": 110,
+  "recommend": {
+    "is_ad": false,
+    "reason": ""
+  },
+  "recommend_reasons": [{
+    "name": "配送飞快"
+  }],
+  "regular_customer_count": 0,
+  "scheme": "https://h5.ele.me/shop/#id=E8282364537137650775",
+  "status": 1,
+  "support_tags": [{
+    "border": "dddddd",
+    "color": "666666",
+    "icon": "4e20966ca2a516de3f02fb9c7fd1bc6dpng",
+    "text": "蛋糕",
+    "type": 1
+  }, {
+    "border": "dddddd",
+    "color": "333333",
+    "text": "品质联盟"
+  }],
+  "supports": [{
+    "border": "90dddddd",
+    "description": "该商户食品安全已由国泰产险承担，食品安全有保障",
+    "icon_color": "999999",
+    "icon_name": "保",
+    "id": 7,
+    "name": "食安保",
+    "text_color": "666666",
+    "two_characters_icon_name": "保险"
+  }, {
+    "border": "90dddddd",
+    "description": "该商家支持开发票，请在下单时填写好发票抬头",
+    "icon_color": "999999",
+    "icon_name": "票",
+    "id": 4,
+    "name": "开发票",
+    "text_color": "666666",
+    "two_characters_icon_name": "发票"
+  }],
+  "theme": {
+    "default_color": "2395ff",
+    "header_style": 0,
+    "hongbao_style": 0,
+    "price_color": "ff5339",
+    "third_tab_name": "商家",
+    "vanish_fields": []
+  },
+  "type": 0
+}, {
+  "act_tag": 0,
+  "activities": [{
+    "attribute": "{\"200\": {\"1\": 30.0, \"0\": 0}, \"25\": {\"1\": 5.0, \"0\": 0}, \"400\": {\"1\": 50.0, \"0\": 0}, \"100\": {\"1\": 15.0, \"0\": 0}, \"55\": {\"1\": 10.0, \"0\": 0}}",
+    "description": "满25减5，满55减10，满100减15，满200减30，满400减50",
+    "icon_color": "f07373",
+    "icon_name": "减",
+    "id": 21804045786,
+    "is_exclusive_with_food_activity": true,
+    "name": "自营销复杂满减活动",
+    "tips": "满25减5，满55减10，满100减15，满200减30，满400减50",
+    "type": 102
+  }, {
+    "attribute": "17.0",
+    "description": "新用户下单立减17元",
+    "icon_color": "70bc46",
+    "icon_name": "首",
+    "id": 22255424362,
+    "is_exclusive_with_food_activity": true,
+    "name": "新用户立减(不与其他活动共享)",
+    "tips": "新用户下单立减17元",
+    "type": 103
+  }],
+  "authentic_id": 6335856858964183,
+  "average_cost": ">¥100/人",
+  "business_info": "{\"recent_order_num_display\": \"月售354\", \"lemon_support_tags\": [{\"color\": \"cce23028\", \"text\": \"25减5\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"55减10\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"100减15\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"200减30\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"400减50\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"a25c03\", \"text\": \"6元会员红包\", \"border\": \"4ca25c03\", \"background\": null, \"type\": 2, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"品质联盟\", \"border\": \"4ce23028\", \"background\": null, \"type\": 4, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"领8元红包\", \"border\": \"4ce23028\", \"background\": null, \"type\": 8, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"首单减17\", \"border\": \"4ce23028\", \"background\": null, \"type\": 5, \"icon\": null}], \"ad_info\": null}",
+  "delivery_fee_discount": 0,
+  "description": "",
+  "distance": 5011,
+  "favored": false,
+  "flavors": [{
+    "id": 249,
+    "name": "蛋糕"
+  }, {
+    "id": 241,
+    "name": "甜品"
+  }],
+  "float_delivery_fee": 10,
+  "float_minimum_order_amount": 100,
+  "has_story": false,
+  "id": "E6513437260559316310",
+  "image_path": "91d30665b2ae8616df7071f691f00f6ejpeg",
+  "is_new": false,
+  "is_premium": false,
+  "is_star": true,
+  "is_stock_empty": 0,
+  "is_valid": 1,
+  "latitude": 31.26744,
+  "longitude": 121.46662,
+  "max_applied_quantity_per_order": -1,
+  "name": "李奥斯汀甜品蛋糕定制(静安店)",
+  "next_business_time": "明天 09:00",
+  "only_use_poi": false,
+  "opening_hours": ["09:00/19:00"],
+  "order_lead_time": 55,
+  "out_of_range": false,
+  "piecewise_agent_fee": {
+    "description": "配送费¥10",
+    "extra_fee": 0,
+    "is_extra": false,
+    "no_subsidy_fee": "",
+    "rules": [{
+      "fee": 10,
+      "price": 100
+    }],
+    "tips": "配送费¥10"
+  },
+  "platform": 0,
+  "posters": [],
+  "promotion_info": "本店蛋糕均为手工制作，为保证新鲜，请提前2-4小时下单",
+  "rating": 5,
+  "rating_count": 528,
+  "recent_order_num": 354,
+  "recommend": {
+    "is_ad": false,
+    "reason": ""
+  },
+  "recommend_reasons": [],
+  "regular_customer_count": 0,
+  "scheme": "https://h5.ele.me/shop/#id=E6513437260559316310",
+  "status": 1,
+  "support_tags": [{
+    "border": "dddddd",
+    "color": "666666",
+    "icon": "4e20966ca2a516de3f02fb9c7fd1bc6dpng",
+    "text": "蛋糕",
+    "type": 1
+  }, {
+    "border": "dddddd",
+    "color": "333333",
+    "text": "品质联盟"
+  }],
+  "supports": [{
+    "border": "90dddddd",
+    "description": "该商户食品安全已由国泰产险承担，食品安全有保障",
+    "icon_color": "999999",
+    "icon_name": "保",
+    "id": 7,
+    "name": "食安保",
+    "text_color": "666666",
+    "two_characters_icon_name": "保险"
+  }, {
+    "border": "90dddddd",
+    "description": "该商家支持开发票，请在下单时填写好发票抬头",
+    "icon_color": "999999",
+    "icon_name": "票",
+    "id": 4,
+    "name": "开发票",
+    "text_color": "666666",
+    "two_characters_icon_name": "发票"
+  }],
+  "tags": [],
+  "target_tag_path": "d6a7283753e66cad4c4dc9a459d96a7fpng",
+  "theme": {
+    "default_color": "2395ff",
+    "header_style": 0,
+    "hongbao_style": 0,
+    "price_color": "ff5339",
+    "third_tab_name": "商家",
+    "vanish_fields": []
+  },
+  "type": 0
+}, {
+  "act_tag": 0,
+  "activities": [{
+    "attribute": "{\"160\": {\"1\": 45.0, \"0\": 0}, \"100\": {\"1\": 35.0, \"0\": 0}, \"60\": {\"1\": 25.0, \"0\": 0}, \"30\": {\"1\": 12.0, \"0\": 0}}",
+    "description": "满30减12，满60减25，满100减35，满160减45",
+    "icon_color": "f07373",
+    "icon_name": "减",
+    "id": 22208777522,
+    "is_exclusive_with_food_activity": true,
+    "name": "自营销复杂满减活动",
+    "tips": "满30减12，满60减25，满100减35，满160减45",
+    "type": 102
+  }, {
+    "description": "折扣商品7折起",
+    "icon_color": "f07373",
+    "icon_name": "折",
+    "id": 22208784890,
+    "name": "单品折扣",
+    "tips": "单品折扣"
+  }, {
+    "attribute": "2.0",
+    "description": "本店新用户立减2元",
+    "icon_color": "00b762",
+    "icon_name": "新",
+    "id": 1133329011,
+    "is_exclusive_with_food_activity": true,
+    "name": "门店新客立减",
+    "tips": "本店新用户立减2元",
+    "type": 108
+  }, {
+    "attribute": "17.0",
+    "description": "新用户下单立减17元",
+    "icon_color": "70bc46",
+    "icon_name": "首",
+    "id": 22254376946,
+    "is_exclusive_with_food_activity": true,
+    "name": "新用户立减(不与其他活动共享)",
+    "tips": "新用户下单立减17元",
+    "type": 103
+  }, {
+    "description": "特价商品14.9元起",
+    "icon_color": "f1884f",
+    "icon_name": "特",
+    "id": 22208779882,
+    "name": "单品定价",
+    "tips": "单品定价"
+  }, {
+    "attribute": "{\"200.0\": {\"quantity\": 1, \"must_pay_online\": 1, \"name\": \"\\u69b4\\u83b2\\u9c9c\\u5976\\u51bb\"}, \"300.0\": {\"quantity\": 1, \"must_pay_online\": 1, \"name\": \"\\u732b\\u5c71\\u738b\\u679c\\u8089\\u7403\"}, \"100.0\": {\"quantity\": 1, \"must_pay_online\": 1, \"name\": \"\\u8292\\u679c\\u96ea\\u5a9a\\u5a18\"}}",
+    "description": "满100元赠送芒果雪媚娘1份，满200元赠送榴莲鲜奶冻1份，满300元赠送猫山王果肉球1份",
+    "icon_color": "3cc791",
+    "icon_name": "赠",
+    "id": 22219572066,
+    "is_exclusive_with_food_activity": true,
+    "name": "赠品活动",
+    "tips": "满100元赠送芒果雪媚娘1份，满200元赠送榴莲鲜奶冻1份，满300元赠送猫山王果肉球1份",
+    "type": 106
+  }],
+  "authentic_id": 4325896849903012,
+  "average_cost": ">¥100/人",
+  "business_info": "{\"recent_order_num_display\": \"月售305\", \"lemon_support_tags\": [{\"color\": \"cce23028\", \"text\": \"30减12\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"60减25\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"100减35\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"160减45\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"a25c03\", \"text\": \"6元会员红包\", \"border\": \"4ca25c03\", \"background\": null, \"type\": 2, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"品质联盟\", \"border\": \"4ce23028\", \"background\": null, \"type\": 4, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"门店新客减2\", \"border\": \"4ce23028\", \"background\": null, \"type\": 6, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"7折\", \"border\": \"4ce23028\", \"background\": null, \"type\": 7, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"14.9元特价\", \"border\": \"4ce23028\", \"background\": null, \"type\": 7, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"领5元红包\", \"border\": \"4ce23028\", \"background\": null, \"type\": 8, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"赠\", \"border\": \"4ce23028\", \"background\": null, \"type\": 10, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"首单减17\", \"border\": \"4ce23028\", \"background\": null, \"type\": 5, \"icon\": null}], \"ad_info\": null}",
+  "delivery_fee_discount": 5,
+  "description": "主营马来西亚榴莲蛋糕甜品、生日蛋糕、饮品。",
+  "distance": 8153,
+  "favored": false,
+  "flavors": [{
+    "id": 241,
+    "name": "甜品"
+  }, {
+    "id": 249,
+    "name": "蛋糕"
+  }],
+  "float_delivery_fee": 3,
+  "float_minimum_order_amount": 50,
+  "has_story": false,
+  "id": "E10017571554821981568",
+  "image_path": "134162e32c16e6461d35a565d8605322jpeg",
+  "is_new": true,
+  "is_premium": false,
+  "is_star": false,
+  "is_stock_empty": 0,
+  "is_valid": 1,
+  "latitude": 31.180581,
+  "longitude": 121.432283,
+  "max_applied_quantity_per_order": -1,
+  "name": "榴艺啡榴莲蛋糕甜品(中山西路店)",
+  "next_business_time": "明天 08:00",
+  "only_use_poi": false,
+  "opening_hours": ["08:00/24:00"],
+  "order_lead_time": 52,
+  "out_of_range": false,
+  "piecewise_agent_fee": {
+    "description": "配送费¥3",
+    "extra_fee": 0,
+    "is_extra": false,
+    "no_subsidy_fee": "¥8",
+    "rules": [{
+      "fee": 3,
+      "price": 50
+    }],
+    "tips": "配送费¥3"
+  },
+  "platform": 0,
+  "posters": [],
+  "promotion_info": "原猫山王（徐汇店），老店新开，开业大促限时一个月活动，感谢各位新老顾客支持！",
+  "rating": 4.9,
+  "rating_count": 121,
+  "recent_order_num": 305,
+  "recommend": {
+    "is_ad": false,
+    "reason": ""
+  },
+  "recommend_reasons": [],
+  "regular_customer_count": 0,
+  "scheme": "https://h5.ele.me/shop/#id=E10017571554821981568",
+  "status": 1,
+  "support_tags": [{
+    "border": "dddddd",
+    "color": "666666",
+    "icon": "4e20966ca2a516de3f02fb9c7fd1bc6dpng",
+    "text": "甜品",
+    "type": 1
+  }, {
+    "border": "dddddd",
+    "color": "333333",
+    "text": "品质联盟"
+  }],
+  "supports": [{
+    "border": "90dddddd",
+    "description": "商家原因导致订单取消，赔付代金券",
+    "icon_color": "999999",
+    "icon_name": "赔",
+    "id": 10,
+    "name": "拒单赔",
+    "text_color": "666666",
+    "two_characters_icon_name": ""
+  }, {
+    "border": "90dddddd",
+    "description": "该商户食品安全已由国泰产险承担，食品安全有保障",
+    "icon_color": "999999",
+    "icon_name": "保",
+    "id": 7,
+    "name": "食安保",
+    "text_color": "666666",
+    "two_characters_icon_name": "保险"
+  }, {
+    "border": "90dddddd",
+    "description": "该商家支持开发票，请在下单时填写好发票抬头",
+    "icon_color": "999999",
+    "icon_name": "票",
+    "id": 4,
+    "name": "开发票",
+    "text_color": "666666",
+    "two_characters_icon_name": "发票"
+  }],
+  "target_tag_path": "2ee2741ca9ac548f5efce60c645668cbpng",
+  "theme": {
+    "default_color": "2395ff",
+    "header_style": 0,
+    "hongbao_style": 0,
+    "price_color": "ff5339",
+    "third_tab_name": "商家",
+    "vanish_fields": []
+  },
+  "type": 0
+}, {
+  "act_tag": 0,
+  "activities": [{
+    "attribute": "{\"298\": {\"1\": 10.0, \"0\": 0}, \"500\": {\"1\": 20.0, \"0\": 0}}",
+    "description": "满298减10，满500减20",
+    "icon_color": "f07373",
+    "icon_name": "减",
+    "id": 22168511674,
+    "is_exclusive_with_food_activity": true,
+    "name": "自营销复杂满减活动",
+    "tips": "满298减10，满500减20",
+    "type": 102
+  }, {
+    "attribute": "17.0",
+    "description": "新用户下单立减17元",
+    "icon_color": "70bc46",
+    "icon_name": "首",
+    "id": 22254463106,
+    "is_exclusive_with_food_activity": true,
+    "name": "新用户立减(不与其他活动共享)",
+    "tips": "新用户下单立减17元",
+    "type": 103
+  }],
+  "authentic_id": 5385806859868430,
+  "average_cost": ">¥100/人",
+  "business_info": "{\"recent_order_num_display\": \"月售17\", \"lemon_support_tags\": [{\"color\": \"cce23028\", \"text\": \"298减10\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"500减20\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"a25c03\", \"text\": \"6元会员红包\", \"border\": \"4ca25c03\", \"background\": null, \"type\": 2, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"品质联盟\", \"border\": \"4ce23028\", \"background\": null, \"type\": 4, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"0元配送\", \"border\": \"4ce23028\", \"background\": null, \"type\": 12, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"首单减17\", \"border\": \"4ce23028\", \"background\": null, \"type\": 5, \"icon\": null}], \"ad_info\": null}",
+  "delivery_fee_discount": 0,
+  "description": "",
+  "distance": 23891,
+  "favored": false,
+  "flavors": [{
+    "id": 249,
+    "name": "蛋糕"
+  }, {
+    "id": 240,
+    "name": "奶茶果汁"
+  }],
+  "float_delivery_fee": 0,
+  "float_minimum_order_amount": 0,
+  "has_story": false,
+  "id": "E1781854567547108643",
+  "image_path": "1f5eb61c247b1c4b59beda1a14ff9406png",
+  "is_new": false,
+  "is_premium": false,
+  "is_star": false,
+  "is_stock_empty": 0,
+  "is_valid": 1,
+  "latitude": 31.058945,
+  "longitude": 121.413291,
+  "max_applied_quantity_per_order": -1,
+  "name": "cherrycake蛋糕甜品",
+  "next_business_time": "明天 00:00",
+  "only_use_poi": false,
+  "opening_hours": ["00:00/24:00"],
+  "order_lead_time": 56,
+  "out_of_range": false,
+  "piecewise_agent_fee": {
+    "description": "免配送费",
+    "extra_fee": 0,
+    "is_extra": false,
+    "no_subsidy_fee": "",
+    "rules": [{
+      "fee": 0,
+      "price": 0
+    }],
+    "tips": "免配送费"
+  },
+  "platform": 0,
+  "posters": [],
+  "promotion_info": "",
+  "rating": 4.8,
+  "rating_count": 4,
+  "recent_order_num": 17,
+  "recommend": {
+    "is_ad": false,
+    "reason": ""
+  },
+  "recommend_reasons": [],
+  "regular_customer_count": 0,
+  "scheme": "https://h5.ele.me/shop/#id=E1781854567547108643",
+  "status": 1,
+  "support_tags": [{
+    "border": "dddddd",
+    "color": "666666",
+    "icon": "4e20966ca2a516de3f02fb9c7fd1bc6dpng",
+    "text": "蛋糕",
+    "type": 1
+  }, {
+    "border": "dddddd",
+    "color": "333333",
+    "text": "品质联盟"
+  }],
+  "supports": [{
+    "border": "90dddddd",
+    "description": "该商户食品安全已由国泰产险承担，食品安全有保障",
+    "icon_color": "999999",
+    "icon_name": "保",
+    "id": 7,
+    "name": "食安保",
+    "text_color": "666666",
+    "two_characters_icon_name": "保险"
+  }],
+  "theme": {
+    "default_color": "2395ff",
+    "header_style": 0,
+    "hongbao_style": 0,
+    "price_color": "ff5339",
+    "third_tab_name": "商家",
+    "vanish_fields": []
+  },
+  "type": 0
+}]

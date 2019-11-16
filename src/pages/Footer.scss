@@ -1,0 +1,17 @@
+.footer{
+  height: 0.5rem;
+  &-warp{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    min-height: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 -0.01rem 0.02rem rgba(0,0,0,.1);
+    &-item{
+      flex: 1;
+      text-align: center;
+    }
+  }
+}

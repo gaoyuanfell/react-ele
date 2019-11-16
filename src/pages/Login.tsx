@@ -2,7 +2,15 @@ import React from 'react';
 
 import './Login.scss';
 
-export function Login() {
+export function Login(props) {
+
+  const { history } = props
+
+  const loginBtn = (str, event)=>{
+    history.push('/home')
+  }
+
+
   return (
     <div className="container-login">
 
@@ -27,7 +35,7 @@ export function Login() {
         <a href="/"> 《隐私权政策》 </a>
       </p>
 
-      <button className="login-btn">
+      <button className="login-btn" onClick={ loginBtn.bind(null, '1')  }>
         登录
       </button>
 
