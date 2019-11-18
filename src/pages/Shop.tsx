@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react'
 import './Shop.scss'
 
 export function Shop() {
@@ -12,30 +12,74 @@ export function Shop() {
   const [tapType, setTapType] = useState<any>(1)
   const [recommend, setRecommend] = useState<any>(null)
   const [info, setInfo] = useState<any>({})
+  const [menu, setMenu] = useState<any[]>()
+  const [wHeight, setWHeight] = useState<number>(window.screen.height)
+
+  // 确定foot高度
+  const tabRef = useRef<HTMLDivElement>(null)
+  const mainRef = useCallback((node:HTMLDivElement) => {
+    if ( node !== null ) {
+      if(tabRef.current !== null){
+        let height = wHeight - tabRef.current.offsetHeight
+        node.style.height = `${height}px`;
+      }
+    }
+  }, [wHeight]);
 
   useEffect(() => {
-    const recommend = require('../assets/json/recommend.json')
-    setRecommend(recommend)
-  },[])
+    setRecommend(require('../assets/json/recommend.json'))
+  }, [])
 
   useEffect(() => {
-    const info = require('../assets/json/info.json')
-    info._image_hash = `https://cube.elemecdn.com/${info.shop_sign.image_hash.substr(0, 1)}/${info.shop_sign.image_hash.substr(1, 2)}/${info.shop_sign.image_hash.substr(3)}${getImgSuffix(info.shop_sign.image_hash)}?x-oss-process=image/format,webp/resize,w_770`
-    info._image_path = `https://cube.elemecdn.com/${info.image_path.substr(0, 1)}/${info.image_path.substr(1, 2)}/${info.image_path.substr(3)}${getImgSuffix(info.image_path)}?x-oss-process=image/format,webp/resize,w_150`
-    setInfo(info)
-  },[])
+    setInfo(require('../assets/json/info.json'))
+  }, [])
 
   useEffect(() => {
-    console.info('ok')
-  },[])
+    setMenu(require('../assets/json/menu.json'))
+  }, [])
 
+  const handerResize = () => {
+    setWHeight(window.screen.height)
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize',handerResize)
+    return () => {
+      window.removeEventListener('resize', handerResize)
+    }
+  }, [wHeight])
+
+  const _image_hash = useMemo(() => {
+    let shop_sign = info.shop_sign
+    if (shop_sign) {
+      return `https://cube.elemecdn.com/${shop_sign.image_hash.substr(0, 1)}/${shop_sign.image_hash.substr(1, 2)}/${shop_sign.image_hash.substr(3)}${getImgSuffix(shop_sign.image_hash)}?x-oss-process=image/format,webp/resize,w_770`
+    }
+    return ''
+  }, [info])
+
+  const _image_path = useMemo(() => {
+    let image_path = info.image_path
+    if (image_path) {
+      return `https://cube.elemecdn.com/${image_path.substr(0, 1)}/${image_path.substr(1, 2)}/${image_path.substr(3)}${getImgSuffix(image_path)}?x-oss-process=image/format,webp/resize,w_150`
+    }
+    return ''
+  }, [info])
+
+  const _image_banner = useMemo(() => {
+    let posters = info.posters
+    if (posters instanceof Array && posters[0]) {
+      let image_banner = posters[0].image_hash
+      return `https://cube.elemecdn.com/${image_banner.substr(0, 1)}/${image_banner.substr(1, 2)}/${image_banner.substr(3)}${getImgSuffix(image_banner)}?x-oss-process=image/format,webp/resize,w_686`
+    }
+    return ''
+  }, [info])
 
   return (
     <div className="shop">
-      <div className="shop-nav" style={{ backgroundImage: 'url('+ info._image_hash +')' }}></div>
+      <div className="shop-nav" style={{ backgroundImage: 'url(' + _image_hash + ')' }}></div>
       <div className="shop-info f_l">
         <div className="shop-info-img">
-          <img src={ info._image_path } alt="" />
+          <img src={_image_path} alt="" />
         </div>
         <div className="shop-info-title">
           <h2 className="shop-info-title-text1 f_c_c">
@@ -43,9 +87,9 @@ export function Shop() {
             <i></i>
           </h2>
           <p className="shop-info-title-text2">
-            <span>评价 { info.rating }</span>
-            <span>月售{ info.recent_order_num }单</span>
-            <span>蜂鸟快送约{ info.order_lead_time }分钟</span>
+            <span>评价 {info.rating}</span>
+            <span>月售{info.recent_order_num}单</span>
+            <span>蜂鸟快送约{info.order_lead_time}分钟</span>
           </p>
         </div>
 
@@ -69,23 +113,23 @@ export function Shop() {
             {
               info.activity_tags && info.activity_tags.map((item, index) => {
                 return (
-                  <span key={ index }>{ item.text }</span>
+                  <span key={index}>{item.text}</span>
                 )
               })
             }
           </div>
           <div className="shop-info-manjian-more">
-            { info.activities ? info.activities.length : 0 }个优惠
+            {info.activities ? info.activities.length : 0}个优惠
           </div>
         </div>
 
         <p className="shop-info-gonggao">
-          公告：{ info.promotion_info }
+          公告：{info.promotion_info}
         </p>
 
       </div>
 
-      <div className="shop-tab f_c_c">
+      <div ref={ tabRef } className="shop-tab f_c_c">
         <div className={'shop-tab-item' + (tapType === 1 ? ' active' : '')} onClick={() => setTapType(1)}>点餐</div>
         <div className={'shop-tab-item' + (tapType === 2 ? ' active' : '')} onClick={() => setTapType(2)}>评价</div>
         <div className={'shop-tab-item' + (tapType === 3 ? ' active' : '')} onClick={() => setTapType(3)}>商家</div>
@@ -93,7 +137,7 @@ export function Shop() {
 
       <div className="tab1" style={{ display: tapType === 1 ? 'block' : 'none' }}>
         <div className="tab1-banner">
-          <img src="https://cube.elemecdn.com/3/05/f9fa007ad45410d09d450e5843f66png.png?x-oss-process=image/format,webp/resize,w_686" alt="" />
+          <img src={_image_banner} alt="" />
         </div>
         {
           recommend &&
@@ -126,6 +170,64 @@ export function Shop() {
             </div>
           </div>
         }
+        <div ref={ mainRef } className="category-main f_l">
+          <div className="category-menu">
+            <ul>
+              {
+                menu &&
+                menu.map((item) => {
+                  let { name, id } = item;
+                  return (
+                    <li className="category-menu-item" key={id}>{name}</li>
+                  )
+                })
+              }
+            </ul>
+          </div>
+          <div className="category-container">
+            {
+              menu &&
+              menu.map((item) => {
+                let { name, description, foods, id } = item;
+                return (
+                  <dl className="food-item" key={id}>
+                    <dt>
+                      <div className="f_l">
+                        <strong className="food-item-name">{name}</strong>
+                        <span className="food-item-desc">{description}</span>
+                      </div>
+                    </dt>
+                    {
+                      foods.map(fitem => {
+                        let { name, description, image_path, lowest_price, month_sales, satisfy_rate, item_id } = fitem
+                        let _image_path = `https://cube.elemecdn.com/${image_path.substr(0, 1)}/${image_path.substr(1, 2)}/${image_path.substr(3)}${getImgSuffix(image_path)}?x-oss-process=image/resize,m_lfit,w_140,h_140/watermark,g_se,x_4,y_4,image_YS8xYS82OGRlYzVjYTE0YjU1ZjJlZmFhYmIxMjM4Y2ZkZXBuZy5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yOA%3D%3D/quality,q_90/format,webp`
+                        return (
+                          <dd key={item_id}>
+                            <div className="food-item-food f_l">
+                              <img className="food-item-img" src={ _image_path } alt=""/>
+                              <div className="food-item-info f_l">
+                                <h3>{ name }</h3>
+                                <p>{ description }</p>
+                                <p>月售{ month_sales }份 好评率{ satisfy_rate }%</p>
+                                <div className="food-item-info-numCtrl f_b_c">
+                                  <p>
+                                    <small>￥</small>
+                                    {lowest_price}
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </dd>
+                        )
+                      })
+                    }
+                  </dl>
+                )
+              })
+            }
+          </div>
+        </div>
+
       </div>
       <div style={{ display: tapType === 2 ? 'block' : 'none' }}>
         评价
