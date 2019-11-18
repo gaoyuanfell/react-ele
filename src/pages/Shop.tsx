@@ -1,13 +1,8 @@
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react'
 import './Shop.scss'
+import { getImageUrl } from '../core/util'
 
 export function Shop() {
-
-  const getImgSuffix = (url: string) => {
-    let ms = url.match(/png|jpeg/)
-    if (!ms) return ''
-    return `.${ms[0]}`
-  }
 
   const [tapType, setTapType] = useState<any>(1)
   const [recommend, setRecommend] = useState<any>(null)
@@ -52,7 +47,7 @@ export function Shop() {
   const _image_hash = useMemo(() => {
     let shop_sign = info.shop_sign
     if (shop_sign) {
-      return `https://cube.elemecdn.com/${shop_sign.image_hash.substr(0, 1)}/${shop_sign.image_hash.substr(1, 2)}/${shop_sign.image_hash.substr(3)}${getImgSuffix(shop_sign.image_hash)}?x-oss-process=image/format,webp/resize,w_770`
+      return getImageUrl(shop_sign.image_hash, 'x-oss-process=image/format,webp/resize,w_770')
     }
     return ''
   }, [info])
@@ -60,7 +55,7 @@ export function Shop() {
   const _image_path = useMemo(() => {
     let image_path = info.image_path
     if (image_path) {
-      return `https://cube.elemecdn.com/${image_path.substr(0, 1)}/${image_path.substr(1, 2)}/${image_path.substr(3)}${getImgSuffix(image_path)}?x-oss-process=image/format,webp/resize,w_150`
+      return getImageUrl(image_path, 'x-oss-process=image/format,webp/resize,w_150')
     }
     return ''
   }, [info])
@@ -69,7 +64,7 @@ export function Shop() {
     let posters = info.posters
     if (posters instanceof Array && posters[0]) {
       let image_banner = posters[0].image_hash
-      return `https://cube.elemecdn.com/${image_banner.substr(0, 1)}/${image_banner.substr(1, 2)}/${image_banner.substr(3)}${getImgSuffix(image_banner)}?x-oss-process=image/format,webp/resize,w_686`
+      return getImageUrl(image_banner, 'x-oss-process=image/format,webp/resize,w_686')
     }
     return ''
   }, [info])
@@ -149,7 +144,7 @@ export function Shop() {
                   recommend.items.map(item => {
 
                     let { item_id, name, image_path, month_sales, lowest_price } = item
-                    let _image_path = `https://cube.elemecdn.com/${image_path.substr(0, 1)}/${image_path.substr(1, 2)}/${image_path.substr(3)}${getImgSuffix(image_path)}?x-oss-process=image/resize,m_lfit,w_240/watermark,g_se,x_4,y_4,image_YS8xYS82OGRlYzVjYTE0YjU1ZjJlZmFhYmIxMjM4Y2ZkZXBuZy5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yOA%3D%3D/quality,q_90/format,webp`
+                    let _image_path = getImageUrl(image_path, 'x-oss-process=image/resize,m_lfit,w_240/watermark,g_se,x_4,y_4,image_YS8xYS82OGRlYzVjYTE0YjU1ZjJlZmFhYmIxMjM4Y2ZkZXBuZy5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yOA%3D%3D/quality,q_90/format,webp')
 
                     return (
                       <div className="tab1-tuijian-item" key={item_id}>
@@ -200,7 +195,7 @@ export function Shop() {
                     {
                       foods.map(fitem => {
                         let { name, description, image_path, lowest_price, month_sales, satisfy_rate, item_id } = fitem
-                        let _image_path = `https://cube.elemecdn.com/${image_path.substr(0, 1)}/${image_path.substr(1, 2)}/${image_path.substr(3)}${getImgSuffix(image_path)}?x-oss-process=image/resize,m_lfit,w_140,h_140/watermark,g_se,x_4,y_4,image_YS8xYS82OGRlYzVjYTE0YjU1ZjJlZmFhYmIxMjM4Y2ZkZXBuZy5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yOA%3D%3D/quality,q_90/format,webp`
+                        let _image_path = getImageUrl(image_path, 'x-oss-process=image/resize,m_lfit,w_140,h_140/watermark,g_se,x_4,y_4,image_YS8xYS82OGRlYzVjYTE0YjU1ZjJlZmFhYmIxMjM4Y2ZkZXBuZy5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yOA%3D%3D/quality,q_90/format,webp')
                         return (
                           <dd key={item_id}>
                             <div className="food-item-food f_l">

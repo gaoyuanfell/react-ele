@@ -2,14 +2,9 @@ import React from 'react';
 
 import './Home.scss';
 import { Footer } from './Footer';
+import { getImageUrl } from '../core/util';
 
 export function Home(props) {
-
-  const getImgSuffix = (url: string)=> {
-    let ms = url.match(/png|jpeg/)
-    if (!ms) return ''
-    return `.${ms[0]}`
-  }
 
   const goShop = ()=> {
     props.history.push('/shop')
@@ -137,7 +132,7 @@ export function Home(props) {
               ...supports
             ]
 
-            let _image_path = `https://cube.elemecdn.com/${image_path.substr(0, 1)}/${image_path.substr(1, 2)}/${image_path.substr(3)}${getImgSuffix(image_path)}?x-oss-process=image/format,webp/resize,w_130,h_130,m_fixed`
+            let _image_path = getImageUrl(image_path, 'x-oss-process=image/format,webp/resize,w_130,h_130,m_fixed')
 
             return (
               <div className="shoplist-item" key={ index } onClick={ goShop.bind(null) }>
