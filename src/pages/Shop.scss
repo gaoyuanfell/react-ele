@@ -1,0 +1,213 @@
+.shop{
+  .tab1{
+    
+    &-banner{
+      background: #fff;
+      padding: 0.07rem 0.16rem 0 0.16rem;
+      img{
+        height: 0.88rem;
+      }
+    }
+    &-tuijian{
+      padding-top: 0.16rem;
+      &-title{
+        color: #333;
+        font-weight: 700;
+        padding: 0 0 0.1rem 0.16rem;
+        font-size: 0.16rem;
+      }
+      &-scroll{
+        -webkit-overflow-scrolling: touch;
+        overflow-x: scroll;
+        &::-webkit-scrollbar{
+          display: none;
+        }
+      }
+      &-box{
+        
+      }
+      &-item{
+        width: 1.2rem;
+        min-width: 1.2rem;
+        margin-left: 0.1rem;
+        img{
+          width: 1.2rem;
+          min-width: 1.2rem;
+          height: 1.2rem;
+          display: block;
+        }
+        &:first-child{
+          margin-left: 0.16rem;
+        }
+        &:last-child{
+          margin-right: 0.16rem;
+        }
+        :nth-child(2){
+          font-size: 0.14rem;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          color: #333;
+          margin: 0.07rem 0 0.035rem 0;
+        }
+        :nth-child(3){
+          color: #999;
+          margin-bottom: 0.07rem;
+          font-size: 0.1rem;
+        }
+        &-jiage{
+          color: rgb(255, 83, 57);
+          font-size: 0.18rem;
+        }
+      }
+    }
+  }
+
+
+  &-tab{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    line-height: 0.4rem;
+    &-item{
+      text-align: center;
+      flex: 1;
+      position: relative;
+      text-align: center;
+      font-size: .15rem;
+      color: #666;
+      border-bottom: 1px solid #ebebeb;
+      &.active{
+        color: #333;
+        font-weight: 700;
+      }
+    }
+  }
+  &-nav{
+    height: 1rem;
+    padding: 0.08rem 0.1rem 0 0.1rem;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    &::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-image: linear-gradient(0deg,hsla(0,0%,100%,0),rgba(0,0,0,.5));
+    }
+  }
+  &-info{
+    position: relative;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 0.3rem 0 0;
+    &-img{
+      width: 0.75rem;
+      height: 0.75rem;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -0.6rem;
+      img{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        box-shadow: 0 0 0.4rem 0 rgba(0,0,0,.2);
+      }
+    }
+    &-title{
+      text-align: center;
+      &-text1{
+        font-weight: 700;
+        white-space: nowrap;
+        font-size: 0.2rem;
+        i{
+          width: 0.15rem;
+          height: 0.2rem;
+          display: block;
+          position: relative;
+          &:after{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 6px solid;
+            border-color: transparent transparent transparent rgba(0,0,0,.67);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+          }
+        }
+      }
+      &-text2{
+        font-size: 0.11rem;
+        color: #666;
+        text-align: center;
+        padding-top: 0.05rem;
+        span + span{
+          padding-left: 0.08rem;
+        }
+      }
+    }
+    &-juan{
+      &-item{
+        color: #594519;
+        background: #ffe578;
+        padding: 0.02rem 0;
+        font-size: 0.11rem;
+        margin-top: 0.08rem;
+        >:nth-child(1){
+          width: 1rem;
+          text-align: center;
+          > :nth-child(1){
+            font-weight: 700;
+            font-size: 0.16rem;
+          }
+          > :nth-child(2){
+            padding-left: 0.1rem;
+          }
+        }
+        >:nth-child(2){
+          width: 0.35rem;
+          text-align: center;
+          color: #594519;
+        }
+      }
+    }
+    &-manjian{
+      width: 80%;
+      margin: 0.12rem auto 0;
+      &-item{
+        >span{
+          color: rgb(255, 75, 51);
+          border: 1px solid rgb(255, 201, 193);
+          font-size: 0.1rem;
+          background-color: #fff;
+          padding: 0.01rem 0.04rem;
+          margin: 0.025rem;
+        }
+      }
+      &-more{
+        text-align: right;
+        color: #999;
+        width: 0.8rem;
+        padding-right: 0.1rem;
+        font-size: 0.11rem;
+      }
+    }
+    &-gonggao{
+      font-size: 0.11rem;
+      width: 80%;
+      color: #999;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding: 0;
+      margin: 0.085rem auto 0.1rem;
+    }
+  }
+}

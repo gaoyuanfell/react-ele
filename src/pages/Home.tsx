@@ -3,13 +3,17 @@ import React from 'react';
 import './Home.scss';
 import { Footer } from './Footer';
 
-function getImgSuffix(url: string) {
-  let ms = url.match(/png|jpeg/)
-  if (!ms) return ''
-  return `.${ms[0]}`
-}
+export function Home(props) {
 
-export function Home() {
+  const getImgSuffix = (url: string)=> {
+    let ms = url.match(/png|jpeg/)
+    if (!ms) return ''
+    return `.${ms[0]}`
+  }
+
+  const goShop = ()=> {
+    props.history.push('/shop')
+  }
 
   let productList = [
     {
@@ -71,7 +75,6 @@ export function Home() {
   ]
 
   let business: any[] = require('../assets/json/business.json')
-  console.info(business)
 
   return (
     <>
@@ -137,7 +140,7 @@ export function Home() {
             let _image_path = `https://cube.elemecdn.com/${image_path.substr(0, 1)}/${image_path.substr(1, 2)}/${image_path.substr(3)}${getImgSuffix(image_path)}?x-oss-process=image/format,webp/resize,w_130,h_130,m_fixed`
 
             return (
-              <div className="shoplist-item" key={ index }>
+              <div className="shoplist-item" key={ index } onClick={ goShop.bind(null) }>
                 <div className="shoplist-item-top f_c_c">
                   <div className="shoplist-item-top-img">
                     <img src={ _image_path } alt="" />
@@ -191,10 +194,9 @@ export function Home() {
             )
           })
         }
-
+      
       </div>
-
-
+      
       <Footer></Footer>
 
     </>
