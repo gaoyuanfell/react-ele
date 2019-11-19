@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "000f0c8e46670b229e2b8a30bc3cb524",
+    "revision": "79f87242f474e232b89885b8e6c5c178",
     "url": "https://gaoyuanfell.github.io/react-ele/index.html"
   },
   {
