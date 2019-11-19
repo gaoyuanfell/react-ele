@@ -51,7 +51,7 @@
           margin-right: 0.16rem;
         }
 
-        :nth-child(2) {
+        > :nth-child(2) {
           font-size: 0.14rem;
           white-space: nowrap;
           text-overflow: ellipsis;
@@ -60,7 +60,7 @@
           margin: 0.07rem 0 0.035rem 0;
         }
 
-        :nth-child(3) {
+        > :nth-child(3) {
           color: #999;
           margin-bottom: 0.07rem;
           font-size: 0.1rem;
@@ -74,6 +74,7 @@
     }
   }
 
+  // 分类 食物
   .category-main {
     // height: 6.31rem;
     .category-menu {
@@ -87,12 +88,26 @@
       background-color: #f8f8f8;
 
       &-item {
+        position: relative;
         font-size: 0.12rem;
         color: #666;
         padding: 0.175rem 0.075rem;
         &.active{
           color: #333;
           background-color: #fff;
+        }
+        &-number{
+          position: absolute;
+          background-image: linear-gradient(-90deg,#ff7416,#ff3c15 98%);
+          border-radius: 0.08rem;
+          color: #fff;
+          top: 0.02rem;
+          right: 0.02rem;
+          min-width: 0.14rem;
+          padding: 0 0.04rem;
+          text-align: center;
+          font-weight: 700;
+          font-size: 0.1rem;
         }
       }
     }
@@ -106,6 +121,7 @@
     }
   }
 
+  // 食物
   .food-item{
     dt{
       padding: 0.075rem 0.3rem 0.075rem 0.1rem;
