@@ -6,7 +6,7 @@ import { Shop } from './Shop'
 
 export function Main() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/react-ele">
       <Route exact path="/" render={() => <Redirect to="/login" />} />
       <Route path="/login" exact component={Login} ></Route>
       <Route path="/home" exact component={Home}></Route>
