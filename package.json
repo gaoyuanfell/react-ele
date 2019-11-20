@@ -19,7 +19,7 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "build:gh-pages": "react-app-rewired build && git subtree push --prefix build origin gh-pages",
+    "gh-pages": "git subtree push --prefix build origin gh-pages",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

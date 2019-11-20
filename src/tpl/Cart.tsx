@@ -7,7 +7,7 @@ export function Cart(props){
 
   let memoizedPrice = useMemo(()=> {
     if ( cart instanceof Array && cart.length !== 0){
-      return cart.map(ite => ite.lowest_price * ite.quantity).reduce((a, b) => a + b);
+      return cart.map(ite => ite.lowest_price * ite.quantity).reduce((a, b) => a + b).toFixed(1);
     }
     return 0
   }, [cart])
