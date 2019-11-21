@@ -97,6 +97,7 @@ export function Shop() {
     })
   }, [])
 
+  // 购物车数量改变
   const numberChange = useCallback((item, type, number) => {
     if (!menu || !recommend) return;
     item.quantity = number
@@ -112,7 +113,7 @@ export function Shop() {
     setCart([...cart])
 
     // 同步显示
-    if (menu && type === 1) {
+    if (menu && (type === 1 || type === 3)) {
       let category = menu.find(ite => {
         return ite.id === item.category_id
       })
@@ -128,7 +129,7 @@ export function Shop() {
     }
 
     // 同步显示
-    if (recommend && type === 2) {
+    if (recommend && (type === 2 || type === 3)) {
       let food = recommend.items.find(ite => {
         return ite.item_id === item.item_id
       })
@@ -138,6 +139,14 @@ export function Shop() {
       setRecommend({ ...recommend })
     }
   }, [menu, recommend, cart])
+
+  // 清空 购物车
+  const clearCart = useCallback(() => {
+    cart.forEach(item => {
+      item.quantity = 0
+    })
+    setCart([])
+  }, [cart])
 
   return (
     <div className="shop">
@@ -311,7 +320,7 @@ export function Shop() {
         商家
       </div>
 
-      <Cart cart={cart}></Cart>
+      <Cart cart={cart} onChange={ numberChange } clearCart={ clearCart }></Cart>
 
     </div>
   )

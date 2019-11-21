@@ -2,6 +2,87 @@
   height: 0.48rem;
   background: #fff;
 
+  .cart-list{
+    position: fixed;
+    bottom: 0.48rem;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    transform: translateY(100%);
+    opacity: 0;
+    z-index: 11;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    &.active{
+      transform: translateY(0);
+      opacity: 1;
+    }
+    &-item{
+      padding: 0.075rem 0.125rem 0.075rem 0;
+      margin-left: 0.125rem;
+      min-height: 0.55rem;
+      &:not(:last-child){
+        border-bottom: 0.01rem solid #eee;
+      }
+      > :nth-child(1){
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        vertical-align: middle;
+        font-size: 0.16rem;
+        color: #333;
+        margin-right: 0.2rem;
+      }
+      > :nth-child(2){
+        text-align: right;
+        white-space: nowrap;
+        font-weight: 700;
+        color: rgb(255, 83, 57);
+        font-size: 0.16rem;
+        margin-left: auto;
+        margin-right: 0.2rem;
+        &::before{
+          content: "\A5";
+          font-size: 0.1rem;
+          color: rgb(255, 83, 57);
+        }
+      }
+    }
+
+    &-overflow{
+      max-height: 3rem;
+      overflow-y: auto;
+    }
+
+    .cart-ctrl{
+      height: 0.4rem;
+      padding: 0 0.15rem;
+      background-color: #eceff1;
+      border-bottom: 0.01rem solid #ddd;
+      color: #666;
+      font-size: 0.16rem;
+      >:nth-child(2){
+        font-size: 0.12rem;
+      }
+    }
+  }
+
+  .cart-mask{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .4;
+    transition: opacity .3s ease;
+    z-index: 10;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease;
+    &.active{
+      transform: translateY(0);
+    }
+  }
+
   .cart-box {
     height: 0.48rem;
     position: fixed;
@@ -9,6 +90,7 @@
     width: 100%;
     left: 0;
     background-color: rgba(61, 61, 63, .9);
+    z-index: 11;
 
     &-price {
       flex: 1;
