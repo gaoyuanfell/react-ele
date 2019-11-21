@@ -83,7 +83,6 @@ export function Shop() {
 
   // 菜单定位食物
   const positionFoods = (id, index) => {
-    alert(1)
     let ele = document.querySelector('#category_' + id) as HTMLDivElement
     if (!ele) return
     setMenuIndex(index)
