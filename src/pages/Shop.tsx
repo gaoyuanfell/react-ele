@@ -83,6 +83,7 @@ export function Shop() {
 
   // 菜单定位食物
   const positionFoods = (id, index) => {
+    alert(1)
     let ele = document.querySelector('#category_' + id) as HTMLDivElement
     if (!ele) return
     setMenuIndex(index)
@@ -92,10 +93,10 @@ export function Shop() {
   }
 
   // 食物定位菜单
-  const foodsPosition = useCallback((node: HTMLDivElement) => {
-    node.addEventListener('scroll', () => {
-    })
-  }, [])
+  // const foodsPosition = useCallback((node: HTMLDivElement) => {
+  //   node.addEventListener('scroll', () => {
+  //   })
+  // }, [])
 
   // 购物车数量改变
   const numberChange = useCallback((item, type, number) => {
@@ -267,7 +268,7 @@ export function Shop() {
             </ul>
           </div>
           {/* 食物 */}
-          <div className="category-container" ref={foodsPosition}>
+          <div className="category-container">
             {
               menu &&
               menu.map((item) => {
