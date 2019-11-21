@@ -1,14 +1,14 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aaddb5a6537bce51cd510a842fa53a81",
+    "revision": "bf264c60b1769fafd6ea9b4bee7e7d8b",
     "url": "https://gaoyuanfell.github.io/react-ele/index.html"
   },
   {
-    "revision": "a2e55e047ec8c8a3a299",
+    "revision": "872eeb58b9117baec63c",
     "url": "https://gaoyuanfell.github.io/react-ele/static/css/main.css"
   },
   {
-    "revision": "a2e55e047ec8c8a3a299",
+    "revision": "872eeb58b9117baec63c",
     "url": "https://gaoyuanfell.github.io/react-ele/static/js/main.chunk.js"
   },
   {
