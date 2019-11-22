@@ -189,9 +189,9 @@ export function Home(props) {
             )
           })
         }
-      
+
       </div>
-      
+
       <Footer></Footer>
 
     </>

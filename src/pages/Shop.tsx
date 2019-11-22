@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react'
 import './Shop.scss'
-import { getImageUrl } from '../core/util'
+import { getImageUrl, pushSingle } from '../core/util'
 import { AddDrop } from '../tpl/AddDrop'
 import { Cart } from '../tpl/Cart'
 
@@ -13,6 +13,7 @@ export function Shop() {
   const [wHeight, setWHeight] = useState<number>(window.screen.height)
   const [menuIndex, setMenuIndex] = useState(0)
   const [cart, setCart] = useState<any[]>([])
+  const [cart2, setCart2] = useState<any[]>([])
 
   // 确定foot高度
   const tabRef = useRef<HTMLDivElement>(null)
@@ -102,16 +103,6 @@ export function Shop() {
     if (!menu || !recommend) return;
     item.quantity = number
 
-    // 加入购物车
-    let _cIndex = cart.indexOf(item)
-    if (_cIndex === -1) {
-      cart.push(item)
-    }
-    if (number === 0) {
-      cart.splice(_cIndex, 1)
-    }
-    setCart([...cart])
-
     // 同步显示
     if (menu && (type === 1 || type === 3)) {
       let category = menu.find(ite => {
@@ -123,6 +114,7 @@ export function Shop() {
         })
         if (food) {
           food.quantity = number
+          type !== 3 && pushSingle(cart2, food)
         }
       }
       setMenu([...menu])
@@ -135,18 +127,45 @@ export function Shop() {
       })
       if (food) {
         food.quantity = number
+        type !== 3 && pushSingle(cart2, food)
       }
       setRecommend({ ...recommend })
     }
-  }, [menu, recommend, cart])
+
+    // 加入购物车
+    let _cIndex = cart.indexOf(item)
+    if (_cIndex === -1) {
+      _cIndex = cart.map(i => i.item_id).indexOf(item.item_id)
+      if (_cIndex === -1) {
+        cart.push(item)
+      }
+    }
+
+    let _cIndex2 = cart2.indexOf(item)
+    if (_cIndex2 === -1) {
+      _cIndex2 = cart2.map(i => i.item_id).indexOf(item.item_id)
+    }
+
+    if (number === 0) {
+      cart.splice(_cIndex, 1)
+      cart2.splice(_cIndex2, 1)
+    }
+    setCart([...cart])
+    setCart2([...cart2])
+
+    console.info(cart)
+    console.info(cart2)
+
+  }, [menu, recommend, cart, cart2])
 
   // 清空 购物车
   const clearCart = useCallback(() => {
-    cart.forEach(item => {
+    [...cart, ...cart2].forEach(item => {
       item.quantity = 0
     })
     setCart([])
-  }, [cart])
+    setCart2([])
+  }, [cart, cart2])
 
   return (
     <div className="shop">
@@ -320,7 +339,7 @@ export function Shop() {
         商家
       </div>
 
-      <Cart cart={cart} onChange={ numberChange } clearCart={ clearCart }></Cart>
+      <Cart cart={cart} onChange={numberChange} clearCart={clearCart}></Cart>
 
     </div>
   )

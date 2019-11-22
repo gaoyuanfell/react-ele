@@ -10,7 +10,6 @@ export function Login(props) {
     history.push('/home')
   }
 
-
   return (
     <div className="container-login">
 
