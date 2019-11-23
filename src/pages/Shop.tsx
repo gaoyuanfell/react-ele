@@ -152,10 +152,6 @@ export function Shop() {
     }
     setCart([...cart])
     setCart2([...cart2])
-
-    console.info(cart)
-    console.info(cart2)
-
   }, [menu, recommend, cart, cart2])
 
   // 清空 购物车
