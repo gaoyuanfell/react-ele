@@ -75,7 +75,7 @@
 }
 
 .shoplist-title {
-  font-size: .15rem;
+  font-size: 0.15rem;
   color: #000;
   line-height: 1;
   height: 0.36rem;
@@ -127,25 +127,25 @@
     &-top {
       &-img {
         width: 0.65rem;
-        border: 0.01rem solid rgba(0,0,0,.08);
+        border: 0.01rem solid rgba(0, 0, 0, 0.08);
       }
 
       &-text {
         flex: 1;
-        padding-left: .1rem;
+        padding-left: 0.1rem;
         color: #666;
-        font-size: .11rem;
+        font-size: 0.11rem;
         justify-content: space-between;
         flex-direction: column;
         height: 0.65rem;
 
-        & >:first-child {
+        & > :first-child {
           color: #333;
-          font-size: .15rem;
+          font-size: 0.15rem;
           font-weight: 700;
         }
 
-        & >:nth-child(3){
+        & > :nth-child(3) {
           span:not(:first-child):before {
             color: #ddd;
             content: " ";
@@ -185,28 +185,28 @@
           width: 2.31rem;
           max-width: 2.31rem;
 
-          >p {
+          > p {
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
             vertical-align: middle;
             line-height: 1.5;
-            &:not(:first-child){
+            &:not(:first-child) {
               margin-top: 0.03rem;
             }
           }
         }
 
-        &-more{
+        &-more {
           margin-bottom: auto;
           white-space: nowrap;
-          .dropdown-icon{
+          .dropdown-icon {
             width: 0.06rem;
             margin-left: 0.05rem;
           }
         }
 
-        &-icon{
+        &-icon {
           font-size: 0.11rem;
           color: #fff;
           border-radius: 0.03rem;
